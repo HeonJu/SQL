@@ -60,12 +60,12 @@ HAVING AVG(salary) >= 5000
 ORDER BY AVG(salary) DESC;
 
 --Q10
-SELECT employee_id, salary,
+SELECT employee_id, salary
 CASE WHEN hire_date <= '02/12/31' 'THEN' '창립멤버'
      WHEN hire_date <= '03/12/31' 'THEN' '03년 입사'
      WHEN hire_date <= '04/12/31' 'THEN' '04년 입사'
      ELSE '상장이후 입사'
   END optDate,
-   hire_date
+  hite_date
 FROM employees
 ORDER BY hire_date;
