@@ -9,7 +9,7 @@ FROM employees e, departments d
 WHERE e.department_id = d.department_id
 ORDER BY department_name, employee_id DESC;
 
--- 문제 2.
+-- 문제 2. 3개 테이블 JOIN
 -- employees 테이블의 job_id는 현재의 업무아이디를 가지고 있습니다.
 -- 직원들의 사번(employee_id), 이름(firt_name), 급여(salary), 부서명(department_name), 현재업무(job_title)를
 -- 사번(employee_id) 오름차순 으로 정렬하세요.
@@ -25,7 +25,7 @@ ORDER BY employee_id;
 
 
 
--- 문제 2-1.
+-- 문제 2-1.    3개 테이블 JOIN (LEFT OUTER JOIN)
 -- 문제2에서 부서가 없는 Kimberely(사번 178)까지 표시해 보세요. (107건) ----아웃터 조인
 SELECT employee_id 사번,
     first_name 이름,
